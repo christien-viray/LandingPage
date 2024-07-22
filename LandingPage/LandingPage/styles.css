@@ -1,0 +1,82 @@
+@import url('https://fonts.cdnfonts.com/css/gistesy');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+nav a{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0.5em;
+}
+
+.header1 {
+    margin-bottom: -1.5em;
+}
+
+.header1, footer{
+    background-color: #877858;
+    color: white;
+}
+
+
+.header1 h1{
+    font-family: 'Gistesy', sans-serif;
+    font-size: 2.5em;
+    margin: 0em;
+    padding: 0.5em;
+}
+
+.header1 p{
+    font-size: 1.2em;
+    margin: 0.5em;
+}
+
+.header1 button{
+    font-size: 1em;
+    margin: 0.75em;
+}
+
+.choose-us, .instructor, .testimonials, .form {
+    background-color: #DCCEB1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.choose-us h2{
+    margin: 1em;
+}
+
+.choose-us li{
+    margin: 1em;
+}
+
+.instructor h2, .instructor p {
+    margin: 1em;
+}
+
+.testimonials h2, .testimonials p{
+    margin: 1em;
+}
+
+.form h2{
+    margin: 1em;
+}
+
+footer{
+    margin-top: 1em;
+}
+
+/* .choose-us {
+    margin-bottom
+} */
+
+
+
