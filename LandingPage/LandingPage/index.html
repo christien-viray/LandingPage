@@ -5,40 +5,62 @@
         <meta name = "viewport" content = "width-device-width, inital-scale=1.0">
         <meta name="author" content="Christien Viray">
         <title>Viray's Piano Music Lessons</title>
-        <link rel="stylesheet" href="/Users/christienviray/Desktop/Projects/LandingPage/LandingPage/styles.css">
+        <link rel="stylesheet" href="C:\Users\Christien\Documents\Projects\LandingPage\LandingPage\styles.css">
         <link href="https://fonts.cdnfonts.com/css/gistesy" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <script src="C:\Users\Christien\Documents\Projects\LandingPage\LandingPage\script.js"></script>
     </head>
     <body>
         <header class="header1">
             <h1>Viray's Piano Music Lessons</h1>
             <nav>
-                <a>Choose Us</a>
-                <a>Instructor</a>
-                <a>Testimonials</a>
-                <a>Book a Consultation</a>
+                <a href="#Choose-us">Choose Us</a>
+                <a href="#Instructor">Instructor</a>
+                <a href="#Testimonials">Testimonials</a>
+                <a href="#Form">Book a Consultation</a>
             </nav>
         </header>
         <section>
             <img> <!--image of smthing-->
         </section>
-        <section class="choose-us">
+        <section class="choose-us" id="Choose-us">
             <h2>Why Choose Us?</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Tempore molestias nulla blanditiis totam, labore, voluptatem 
+                nihil ut sapiente repudiandae repellat assumenda qui in 
+                consequuntur? Reiciendis doloribus adipisci beatae officiis accusantium.
+            </p>
             <ul>
                 <li>Flexible Scheduling Options</li>
                 <li>Experienced and Patient Teacher</li>
                 <li>Lessons for All Ages and Skill Levels</li>
                 <li>Personalized Lesson Plans</li>
             </ul>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi omnis
+                 officiis hic magnam possimus, repellat, at nobis reiciendis sit blanditiis 
+                 sunt debitis fuga nisi quaerat explicabo doloremque ad tempore.
+            </p>
         </section>
-        <section class="instructor">
+        <section class="instructor" id="Instructor">
             <h2>Meet Your Instructor</h2>
             <p>Cheska Viray is an experienced piano teacher with a passion for music
                 and helping others reach their musical potential. She has a bachelors in
                 this and has been teaching students for x years.
             </p> 
+            <p>Lorem ipsum, dolor sit
+                 amet consectetur adipisicing elit. Nisi ipsum minima non, perferendis 
+                 eaque maxime est obcaecati natus deleniti sequi dicta, aliquid ullam 
+                 nostrum nam aperiam iure eligendi atque. Error! Lorem ipsum, dolor sit
+                 amet consectetur adipisicing elit.
+            </p> 
+            <p>Quas accusamus molestiae, quaerat eum
+                  adipisci dolor quisquam quia nostrum, ab necessitatibus consequatur aperiam 
+                  fuga, quod cumque repellendus. Voluptates minus hic nihil?
+            </p> 
         </section>
-        <section class="testimonials">
+        <section class="testimonials" id="Testimonials">
             <h2>Testimonials</h2>
             <div>
                 <blockquote>"My daughter has improved so much blah blah blah"</blockquote>
@@ -48,21 +70,33 @@
                 <blockquote>"My son loves piano blah blah blah"</blockquote>
                 <p>- Parent of student</p>
             </div>
+            <div>
+                <blockquote>"My daughter has improved so much blah blah blah"</blockquote>
+                <p>- Parent of student</p>
+            </div>
         </section>
-        <section class="form">
+        <section class="form" id="Form">
             <h2>Book a Free Consultation Now!</h2>
             <form>
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone-num">Phone Number: </label> 
-                <input type="tel" id="phone" name="phone" required>
-                <label for="additional-info">Additional Information (Please
-                    specify name and number of children if any, as well as any 
-                    information you would like me to know): </label>
-                <input type="text" id="additional-info" name="additional-info">
-                <button type="submit">Submit</button>        
+                <div class="Name">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="Email">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="Phone-num">
+                    <label for="phone-num">Phone Number: </label> 
+                    <input type="tel" id="phone-num" name="phone-num" required>
+                </div>
+                <div class="Additional-info">
+                    <label for="additional-info">Additional Information</label>
+                    <input type="text" id="additional-info" name="additional-info">
+                </div>
+                <div class="submit-btn">
+                    <button type="submit">Submit</button>    
+                </div>    
             </form>
         </section>
         <footer>
