@@ -5,7 +5,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     color: #333;
-    /* background-color: #DCCEB1; */
 }
 
 h2{
@@ -13,6 +12,19 @@ h2{
     font-size: 2em;
     justify-content: center;
     padding: 0.75em;
+}
+
+#header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+#logo {
+    border-radius: 8em;
+    width: 200px;
+    height: 200px;
+    margin: 2.5em 1em 1em 2em;
 }
 
 nav {
@@ -32,38 +44,38 @@ nav a{
     margin: 0.5em;
 }
 
-.header1 {
+#header1 {
     border: #DCCEB1 solid 4px;
     border-radius: 1em;
-    margin-bottom: -1.5em;
+    margin-bottom: 1em;
 }
 
 @media (min-width:1200px) {
-    .header1, .choose-us, .instructor, .testimonials, .form, footer {
-        margin-left: 12.5em;
-        margin-right: 12.5em;
+    #header1, .choose-us, .instructor, .testimonials, .form, footer {
+        margin-left: 8em;
+        margin-right: 8em;
     }
 }
 
-.header1, footer{
+#header1, footer{
     background-color: #877858;
     color: white;
 }
 
 
-.header1 h1{
+#header1 h1{
     font-family: 'Gistesy', sans-serif;
     font-size: 4em;
     margin: 0em;
     padding: 0.5em;
 }
 
-.header1 p{
+#header1 p{
     font-size: 1.2em;
     margin: 0.5em;
 }
 
-.header1 button{
+#header1 button{
     font-size: 1em;
     margin: 0.75em;
 }
@@ -88,12 +100,26 @@ nav a{
     padding: 0.5em 0.5em 0.5em 1em;
 }
 
+.instructor::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .instructor h2{
     margin: 1em;
 }
 
 .instructor p {
-    padding: 0.5em 0.5em 0.5em 1em
+    padding: 0.5em 0.5em 0.5em 1em;
+    text-align: justify;
+}
+
+#Cheska {
+    float: right;
+    padding: 0em 2em 2em 1em;
+    width: 300px;
+    height: auto;
 }
 
 .testimonials h2{
@@ -112,30 +138,42 @@ nav a{
     padding: 0.5em 0.5em 0.5em 1em;
 }
 
+#form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Name input, #Additional-info textarea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#Additional-info textarea {
+    height: 5em;
+}
+
+#form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+#Email input, #Phone-num input {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
 .form h2{
     margin: 1em;
 }
 
-/* .form label{
+#submit-btn{
     display: flex;
     justify-content: center;
-} */
-
-.Name, .Email, .Phone-num, .Additional-info{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.5em;
-}
-
-/* .Name, .Name label {
-    padding: 0.5em;
-} */
-
-.submit-btn{
-    display: flex;
-    justify-content: center;
-    padding: 1em;
+    padding: 0em 1em 1em 1em;
 }
 
 button {

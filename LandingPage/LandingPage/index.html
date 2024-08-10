@@ -5,14 +5,17 @@
         <meta name = "viewport" content = "width-device-width, inital-scale=1.0">
         <meta name="author" content="Christien Viray">
         <title>Viray's Piano Music Lessons</title>
-        <link rel="stylesheet" href="C:\Users\Christien\Documents\Projects\LandingPage\LandingPage\styles.css">
+        <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.cdnfonts.com/css/gistesy" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-        <script src="C:\Users\Christien\Documents\Projects\LandingPage\LandingPage\script.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
-        <header class="header1">
-            <h1>Viray's Piano Music Lessons</h1>
+        <header id="header1">
+            <div id="header-div">
+                <img id="logo" src="images/Logo.jpg" alt="Logo for piano teaching business">
+                <h1>Viray's Piano Music Lessons</h1>
+            </div>
             <nav>
                 <a href="#Choose-us">Choose Us</a>
                 <a href="#Instructor">Instructor</a>
@@ -20,10 +23,7 @@
                 <a href="#Form">Book a Consultation</a>
             </nav>
         </header>
-        <section>
-            <img> <!--image of smthing-->
-        </section>
-        <section class="choose-us" id="Choose-us">
+        <section id="Choose-us" class="choose-us">
             <h2>Why Choose Us?</h2>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -43,24 +43,26 @@
                  sunt debitis fuga nisi quaerat explicabo doloremque ad tempore.
             </p>
         </section>
-        <section class="instructor" id="Instructor">
+        <section id="Instructor" class="instructor">
             <h2>Meet Your Instructor</h2>
-            <p>Cheska Viray is an experienced piano teacher with a passion for music
-                and helping others reach their musical potential. She has a bachelors in
-                this and has been teaching students for x years.
+            <img id="Cheska" src="images/Cheska.jpg" alt="Picture of Cheska, the instructor">
+            <p>Cheska Viray is a Mississauga-based piano teacher, and travels to students homes
+                to teach piano ranging from RCM Prep A to RCM Level 7. 
+            </p>
+            <p>She pursued her Bachelors of Music Education degree (BMus) from Western University, 
+                studying under Tina Yanchus-Hibbard, and completing her degree in 2021.  She 
+                returned to Western University to complete her second degree in Primary/Junior 
+                Education (BEd) in 2023. 
             </p> 
-            <p>Lorem ipsum, dolor sit
-                 amet consectetur adipisicing elit. Nisi ipsum minima non, perferendis 
-                 eaque maxime est obcaecati natus deleniti sequi dicta, aliquid ullam 
-                 nostrum nam aperiam iure eligendi atque. Error! Lorem ipsum, dolor sit
-                 amet consectetur adipisicing elit.
-            </p> 
-            <p>Quas accusamus molestiae, quaerat eum
-                  adipisci dolor quisquam quia nostrum, ab necessitatibus consequatur aperiam 
-                  fuga, quod cumque repellendus. Voluptates minus hic nihil?
+            <p>Cheska provides performance techniques, body awareness advice, and music theory 
+                lessons to help her students become a well rounded pianist. She is experienced 
+                in preparing her students for practical examinations with high quality results 
+                and provides performance opportunities with recitals. She recently hosted her 
+                studio's piano recital with great success, and is currently planning more 
+                performance opportunities for years to come. 
             </p> 
         </section>
-        <section class="testimonials" id="Testimonials">
+        <section id="Testimonials" class="testimonials">
             <h2>Testimonials</h2>
             <div>
                 <blockquote>"My daughter has improved so much blah blah blah"</blockquote>
@@ -75,34 +77,37 @@
                 <p>- Parent of student</p>
             </div>
         </section>
-        <section class="form" id="Form">
-            <h2>Book a Free Consultation Now!</h2>
-            <form>
-                <div class="Name">
-                    <label for="name">Name: </label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="Email">
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="Phone-num">
-                    <label for="phone-num">Phone Number: </label> 
-                    <input type="tel" id="phone-num" name="phone-num" required>
-                </div>
-                <div class="Additional-info">
-                    <label for="additional-info">Additional Information</label>
-                    <input type="text" id="additional-info" name="additional-info">
-                </div>
-                <div class="submit-btn">
-                    <button type="submit">Submit</button>    
-                </div>    
-            </form>
+        <section class="form">
+            <h2>Book a Free Consultation</h2>
+            <div id="form-container">
+                <form id="Form">
+                    <div id="Name">
+                        <label for="name">Full Name: </label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div id="form-grid">
+                        <div id="Email">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div id="Phone-num">
+                            <label for="phone-num">Phone Number: </label> 
+                            <input type="tel" id="phone-num" name="phone-num" required>
+                        </div>
+                    </div>
+                    <div id="Additional-info">
+                        <label for="additional-info">Additional Information:</label>
+                        <textarea id="additional-info" name="additional-info"></textarea>
+                    </div>
+                    <div id="submit-btn">
+                        <button type="submit">Submit</button>    
+                    </div> 
+                </form>
+            </div>
         </section>
         <footer>
             <address>
                 <a href="mailto:virayspianomusiclessons@gmail.com">Email</a>
-                <a href="tel:6478824158">Phone Number</a>
                 &copy;Viray Piano Music Lessons 2024
             </address>
         </footer>
